@@ -1,0 +1,16 @@
+import turtle
+window = turtle.Screen()
+tess = turtle.Turtle()
+tess.hideturtle()
+tess.left(30)
+tess.forward(100)
+tess.right(30)
+tess.backward(100)
+tess.right(30)
+tess.forward(100)
+tess.left(150)
+tess.forward(100)
+tess.left(150)
+tess.forward(100)
+
+window.exitonclick()

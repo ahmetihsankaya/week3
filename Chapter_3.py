@@ -82,3 +82,31 @@ for number in numbers:
     running_total = running_total + number
     print(running_total)
 
+#while statements
+n = 6
+current_sum = 0
+i = 0
+while i <= n:
+    current_sum += i # here += equals "current_sum = current_sum + i"
+    i += 1
+print(current_sum)
+
+#number guessing games with while&if&else statements
+import random # We cover random numbers in the
+rng = random.Random() # modules chapter, so peek ahead if you
+number = rng.randrange(1, 100) # Get random number between [1 and 1000).
+
+guesses = 0
+message = ""
+
+while True:
+    guess = int(input(message + "\nGuess my number between 1 and 100: "))
+    guesses += 1
+    if guess > number:
+        message += str(guess) + " is too high.\n"
+    elif guess < number:
+        message += str(guess) + " is too low.\n"
+    else:
+        break
+
+input("\n\nGreat, you got it in "+str(guesses)+" guesses!\n\n")
